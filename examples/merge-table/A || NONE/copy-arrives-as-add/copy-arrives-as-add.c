@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SHIPMENT_SLOTS 96
+#define SHIPMENT_SLOTS 64
 #define SHIPMENT_NAME_SIZE 24
 
 struct shipment {
