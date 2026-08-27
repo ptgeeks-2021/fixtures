@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define VEHICLE_SLOTS 64
+#define VEHICLE_SLOTS 128
 #define VEHICLE_NAME_SIZE 24
 
 struct vehicle {
