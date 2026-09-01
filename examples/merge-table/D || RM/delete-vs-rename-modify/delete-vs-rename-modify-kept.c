@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define VOUCHER_SLOTS 64
+#define VOUCHER_SLOTS 128
 #define VOUCHER_NAME_SIZE 24
 
 struct voucher {
