@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CHANNEL_SLOTS 64
+#define CHANNEL_SLOTS 128
 #define CHANNEL_NAME_SIZE 24
 
 struct channel {
