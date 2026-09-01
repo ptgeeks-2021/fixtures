@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CLUSTER_SLOTS 64
+#define CLUSTER_SLOTS 128
 #define CLUSTER_NAME_SIZE 24
 
 struct cluster {
