@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CHECKPOINT_SLOTS 64
+#define CHECKPOINT_SLOTS 96
 #define CHECKPOINT_NAME_SIZE 24
 
 struct checkpoint {
