@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define REGISTER_SLOTS 64
+#define REGISTER_SLOTS 96
 #define REGISTER_NAME_SIZE 24
 
 struct register {
