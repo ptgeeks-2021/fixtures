@@ -1,0 +1,3 @@
+[submodule "examples/merge-table/M || NONE/fixture-submodule/fixture-submodule"]
+	path = examples/merge-table/M || NONE/fixture-submodule/fixture-submodule
+	url = https://github.com/ptgeeks-2021/fixtures-submodule.git
