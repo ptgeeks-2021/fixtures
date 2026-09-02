@@ -17,153 +17,153 @@ struct warehouse {
     int capacity;
 };
 
-static const struct warehouse warehouse_seed[] = {
-    { 101, "warehouse-0001",  10 },
-    { 102, "warehouse-0002",  17 },
-    { 103, "warehouse-0003",  24 },
-    { 104, "warehouse-0004",  31 },
-    { 105, "warehouse-0005",  38 },
-    { 106, "warehouse-0006",  45 },
-    { 107, "warehouse-0007",  52 },
-    { 108, "warehouse-0008",  59 },
-    { 109, "warehouse-0009",  66 },
-    { 110, "warehouse-0010",  73 },
-    { 111, "warehouse-0011",  80 },
-    { 112, "warehouse-0012",  87 },
-    { 113, "warehouse-0013",  94 },
-    { 114, "warehouse-0014",   4 },
-    { 115, "warehouse-0015",  11 },
-    { 116, "warehouse-0016",  18 },
-    { 117, "warehouse-0017",  25 },
-    { 118, "warehouse-0018",  32 },
-    { 119, "warehouse-0019",  39 },
-    { 120, "warehouse-0020",  46 },
-    { 121, "warehouse-0021",  53 },
-    { 122, "warehouse-0022",  60 },
-    { 123, "warehouse-0023",  67 },
-    { 124, "warehouse-0024",  74 },
-    { 125, "warehouse-0025",  81 },
-    { 126, "warehouse-0026",  88 },
-    { 127, "warehouse-0027",  95 },
-    { 128, "warehouse-0028",   5 },
-    { 129, "warehouse-0029",  12 },
-    { 130, "warehouse-0030",  19 },
-    { 131, "warehouse-0031",  26 },
-    { 132, "warehouse-0032",  33 },
-    { 133, "warehouse-0033",  40 },
-    { 134, "warehouse-0034",  47 },
-    { 135, "warehouse-0035",  54 },
-    { 136, "warehouse-0036",  61 },
-    { 137, "warehouse-0037",  68 },
-    { 138, "warehouse-0038",  75 },
-    { 139, "warehouse-0039",  82 },
-    { 140, "warehouse-0040",  89 },
-    { 141, "warehouse-0041",  96 },
-    { 142, "warehouse-0042",   6 },
-    { 143, "warehouse-0043",  13 },
-    { 144, "warehouse-0044",  20 },
-    { 145, "warehouse-0045",  27 },
-    { 146, "warehouse-0046",  34 },
-    { 147, "warehouse-0047",  41 },
-    { 148, "warehouse-0048",  48 },
+static const struct warehouse warehouse_defaults[] = {
+    { 101, "warehouse_0001",  10 },
+    { 102, "warehouse_0002",  17 },
+    { 103, "warehouse_0003",  24 },
+    { 104, "warehouse_0004",  31 },
+    { 105, "warehouse_0005",  38 },
+    { 106, "warehouse_0006",  45 },
+    { 107, "warehouse_0007",  52 },
+    { 108, "warehouse_0008",  59 },
+    { 109, "warehouse_0009",  66 },
+    { 110, "warehouse_0010",  73 },
+    { 111, "warehouse_0011",  80 },
+    { 112, "warehouse_0012",  87 },
+    { 113, "warehouse_0013",  94 },
+    { 114, "warehouse_0014",   4 },
+    { 115, "warehouse_0015",  11 },
+    { 116, "warehouse_0016",  18 },
+    { 117, "warehouse_0017",  25 },
+    { 118, "warehouse_0018",  32 },
+    { 119, "warehouse_0019",  39 },
+    { 120, "warehouse_0020",  46 },
+    { 121, "warehouse_0021",  53 },
+    { 122, "warehouse_0022",  60 },
+    { 123, "warehouse_0023",  67 },
+    { 124, "warehouse_0024",  74 },
+    { 125, "warehouse_0025",  81 },
+    { 126, "warehouse_0026",  88 },
+    { 127, "warehouse_0027",  95 },
+    { 128, "warehouse_0028",   5 },
+    { 129, "warehouse_0029",  12 },
+    { 130, "warehouse_0030",  19 },
+    { 131, "warehouse_0031",  26 },
+    { 132, "warehouse_0032",  33 },
+    { 133, "warehouse_0033",  40 },
+    { 134, "warehouse_0034",  47 },
+    { 135, "warehouse_0035",  54 },
+    { 136, "warehouse_0036",  61 },
+    { 137, "warehouse_0037",  68 },
+    { 138, "warehouse_0038",  75 },
+    { 139, "warehouse_0039",  82 },
+    { 140, "warehouse_0040",  89 },
+    { 141, "warehouse_0041",  96 },
+    { 142, "warehouse_0042",   6 },
+    { 143, "warehouse_0043",  13 },
+    { 144, "warehouse_0044",  20 },
+    { 145, "warehouse_0045",  27 },
+    { 146, "warehouse_0046",  34 },
+    { 147, "warehouse_0047",  41 },
+    { 148, "warehouse_0048",  48 },
 };
 
-static struct warehouse warehouse_table[WAREHOUSE_SLOTS];
-static int warehouse_used;
+static struct warehouse warehouse_store[WAREHOUSE_SLOTS];
+static int warehouse_length;
 
 void warehouse_reset(void)
 {
-    memset(warehouse_table, 0, sizeof(warehouse_table));
-    warehouse_used = 0;
+    memset(warehouse_store, 0, sizeof(warehouse_store));
+    warehouse_length = 0;
 }
 
-int warehouse_add(int key, const char *name, int capacity)
+int warehouse_insert(int key, const char *name, int capacity)
 {
-    struct warehouse *slot;
+    struct warehouse *entry;
 
-    if (warehouse_used >= WAREHOUSE_SLOTS) {
+    if (warehouse_length >= WAREHOUSE_SLOTS) {
         return -1;
     }
 
-    slot = &warehouse_table[warehouse_used];
-    slot->key = key;
-    slot->capacity = capacity;
-    strncpy(slot->name, name, WAREHOUSE_NAME_SIZE - 1);
-    slot->name[WAREHOUSE_NAME_SIZE - 1] = '\0';
-    warehouse_used++;
+    entry = &warehouse_store[warehouse_length];
+    entry->key = key;
+    entry->capacity = capacity;
+    strncpy(entry->name, name, WAREHOUSE_NAME_SIZE - 1);
+    entry->name[WAREHOUSE_NAME_SIZE - 1] = '\0';
+    warehouse_length++;
 
-    return warehouse_used - 1;
+    return warehouse_length - 1;
 }
 
-struct warehouse *warehouse_find(int key)
+struct warehouse *warehouse_lookup(int key)
 {
     int i;
 
-    for (i = 0; i < warehouse_used; i++) {
-        if (warehouse_table[i].key == key) {
-            return &warehouse_table[i];
+    for (i = 0; i < warehouse_length; i++) {
+        if (warehouse_store[i].key == key) {
+            return &warehouse_store[i];
         }
     }
 
     return NULL;
 }
 
-int warehouse_remove(int key)
+int warehouse_erase(int key)
 {
-    struct warehouse *found;
+    struct warehouse *hit;
 
-    found = warehouse_find(key);
-    if (found == NULL) {
+    hit = warehouse_lookup(key);
+    if (hit == NULL) {
         return -1;
     }
 
-    *found = warehouse_table[warehouse_used - 1];
-    warehouse_used--;
+    *hit = warehouse_store[warehouse_length - 1];
+    warehouse_length--;
 
     return 0;
 }
 
-int warehouse_total_capacity(void)
+int warehouse_sum_capacity(void)
 {
     int i;
-    int total;
+    int sum;
 
-    total = 0;
-    for (i = 0; i < warehouse_used; i++) {
-        total += warehouse_table[i].capacity;
+    sum = 0;
+    for (i = 0; i < warehouse_length; i++) {
+        sum += warehouse_store[i].capacity;
     }
 
-    return total;
+    return sum;
 }
 
-void warehouse_load_seed(void)
+void warehouse_load_defaults(void)
 {
     size_t i;
 
-    for (i = 0; i < sizeof(warehouse_seed) / sizeof(warehouse_seed[0]); i++) {
-        warehouse_add(warehouse_seed[i].key, warehouse_seed[i].name,
-                    warehouse_seed[i].capacity);
+    for (i = 0; i < sizeof(warehouse_defaults) / sizeof(warehouse_defaults[0]); i++) {
+        warehouse_insert(warehouse_defaults[i].key, warehouse_defaults[i].name,
+                    warehouse_defaults[i].capacity);
     }
 }
 
-void warehouse_report(FILE *out)
+void warehouse_dump(FILE *out)
 {
     int i;
 
-    fprintf(out, "%d warehouses\n", warehouse_used);
-    for (i = 0; i < warehouse_used; i++) {
-        fprintf(out, "  %4d %-24s %6d\n", warehouse_table[i].key,
-                warehouse_table[i].name, warehouse_table[i].capacity);
+    fprintf(out, "%d warehouses\n", warehouse_length);
+    for (i = 0; i < warehouse_length; i++) {
+        fprintf(out, "  %4d %-24s %6d\n", warehouse_store[i].key,
+                warehouse_store[i].name, warehouse_store[i].capacity);
     }
-    fprintf(out, "  total capacity %d\n", warehouse_total_capacity());
+    fprintf(out, "  sum capacity %d\n", warehouse_sum_capacity());
 }
 
 int main(void)
 {
     warehouse_reset();
-    warehouse_load_seed();
-    warehouse_remove(103);
-    warehouse_report(stdout);
+    warehouse_load_defaults();
+    warehouse_erase(103);
+    warehouse_dump(stdout);
 
     return 0;
 }

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PIPELINE_SLOTS 64
+#define PIPELINE_SLOTS 96
 #define PIPELINE_NAME_SIZE 24
 
 struct pipeline {
