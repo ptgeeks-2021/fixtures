@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PLAYLIST_SLOTS 64
+#define PLAYLIST_SLOTS 96
 #define PLAYLIST_NAME_SIZE 24
 
 struct playlist {
