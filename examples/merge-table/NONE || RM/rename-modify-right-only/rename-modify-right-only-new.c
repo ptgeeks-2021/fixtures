@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SESSION_SLOTS 64
+#define SESSION_SLOTS 128
 #define SESSION_NAME_SIZE 24
 
 struct session {

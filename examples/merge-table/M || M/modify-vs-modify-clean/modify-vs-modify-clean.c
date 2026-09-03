@@ -155,7 +155,7 @@ void album_report(FILE *out)
         fprintf(out, "  %4d %-24s %6d\n", album_table[i].key,
                 album_table[i].name, album_table[i].photos);
     }
-    fprintf(out, "  total photos %d\n", album_total_photos());
+    fprintf(out, "  photos in total %d\n", album_total_photos());
 }
 
 int main(void)
