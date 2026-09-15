@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SAWMILL_SLOTS 64
+#define SAWMILL_SLOTS 128
 #define SAWMILL_NAME_SIZE 24
 
 struct sawmill {
