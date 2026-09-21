@@ -1,6 +1,6 @@
 /*
  * A fixed size workout table.
- *
+ * Two branches touch this line.
  * It holds up to WORKOUT_SLOTS workouts, each with a key, a short name, and
  * a reps. Lookups walk the table, which is fine at this size.
  */

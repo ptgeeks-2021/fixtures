@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ROUTER_SLOTS 64
+#define ROUTER_SLOTS 128
 #define ROUTER_NAME_SIZE 24
 
 struct router {
