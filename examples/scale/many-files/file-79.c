@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define DEVICE_SLOTS 64
+#define DEVICE_SLOTS 96
 #define DEVICE_NAME_SIZE 24
 
 struct device {

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BREWHOUSE_SLOTS 64
+#define BREWHOUSE_SLOTS 96
 #define BREWHOUSE_NAME_SIZE 24
 
 struct brewhouse {

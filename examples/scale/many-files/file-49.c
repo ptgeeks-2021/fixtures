@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define KILN_SLOTS 64
+#define KILN_SLOTS 96
 #define KILN_NAME_SIZE 24
 
 struct kiln {

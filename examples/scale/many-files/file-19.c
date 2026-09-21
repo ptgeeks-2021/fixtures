@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TENANT_SLOTS 64
+#define TENANT_SLOTS 96
 #define TENANT_NAME_SIZE 24
 
 struct tenant {

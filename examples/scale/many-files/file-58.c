@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BAROMETER_SLOTS 64
+#define BAROMETER_SLOTS 96
 #define BAROMETER_NAME_SIZE 24
 
 struct barometer {

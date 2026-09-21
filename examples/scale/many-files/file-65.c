@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define GREENHOUSE_SLOTS 64
+#define GREENHOUSE_SLOTS 96
 #define GREENHOUSE_NAME_SIZE 24
 
 struct greenhouse {
