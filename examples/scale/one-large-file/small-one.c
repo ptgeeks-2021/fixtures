@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define AQUARIUM_SLOTS 64
+#define AQUARIUM_SLOTS 96
 #define AQUARIUM_NAME_SIZE 24
 
 struct aquarium {
