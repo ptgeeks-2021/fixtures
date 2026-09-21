@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TURBINE_SLOTS 64
+#define TURBINE_SLOTS 96
 #define TURBINE_NAME_SIZE 24
 
 struct turbine {

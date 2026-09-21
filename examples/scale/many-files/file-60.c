@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TELESCOPE_SLOTS 64
+#define TELESCOPE_SLOTS 96
 #define TELESCOPE_NAME_SIZE 24
 
 struct telescope {

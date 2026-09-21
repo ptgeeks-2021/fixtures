@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define COURIER_SLOTS 64
+#define COURIER_SLOTS 96
 #define COURIER_NAME_SIZE 24
 
 struct courier {

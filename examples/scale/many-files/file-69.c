@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define FUNICULAR_SLOTS 64
+#define FUNICULAR_SLOTS 96
 #define FUNICULAR_NAME_SIZE 24
 
 struct funicular {

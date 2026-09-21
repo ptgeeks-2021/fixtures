@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ORDER_SLOTS 64
+#define ORDER_SLOTS 96
 #define ORDER_NAME_SIZE 24
 
 struct order {

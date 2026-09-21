@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TERMINAL_SLOTS 64
+#define TERMINAL_SLOTS 96
 #define TERMINAL_NAME_SIZE 24
 
 struct terminal {
