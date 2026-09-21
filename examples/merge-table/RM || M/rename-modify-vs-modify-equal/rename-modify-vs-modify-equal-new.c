@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define COMPASS_SLOTS 64
+#define COMPASS_SLOTS 256
 #define COMPASS_NAME_SIZE 24
 
 struct compass {
