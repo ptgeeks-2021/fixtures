@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ACCOUNT_SLOTS 64
+#define ACCOUNT_SLOTS 96
 #define ACCOUNT_NAME_SIZE 24
 
 struct account {

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SUBSCRIBER_SLOTS 64
+#define SUBSCRIBER_SLOTS 96
 #define SUBSCRIBER_NAME_SIZE 24
 
 struct subscriber {

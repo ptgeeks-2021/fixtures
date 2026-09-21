@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PASTURE_SLOTS 64
+#define PASTURE_SLOTS 96
 #define PASTURE_NAME_SIZE 24
 
 struct pasture {

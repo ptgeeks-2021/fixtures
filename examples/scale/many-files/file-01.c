@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SENSOR_SLOTS 64
+#define SENSOR_SLOTS 96
 #define SENSOR_NAME_SIZE 24
 
 struct sensor {

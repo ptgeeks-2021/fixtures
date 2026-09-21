@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MICROSCOPE_SLOTS 64
+#define MICROSCOPE_SLOTS 96
 #define MICROSCOPE_NAME_SIZE 24
 
 struct microscope {

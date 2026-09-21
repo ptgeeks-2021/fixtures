@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define WAREHOUSE_SLOTS 64
+#define WAREHOUSE_SLOTS 96
 #define WAREHOUSE_NAME_SIZE 24
 
 struct warehouse {

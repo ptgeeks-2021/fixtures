@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define FLIGHT_SLOTS 64
+#define FLIGHT_SLOTS 96
 #define FLIGHT_NAME_SIZE 24
 
 struct flight {

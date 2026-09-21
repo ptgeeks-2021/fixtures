@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TICKET_SLOTS 64
+#define TICKET_SLOTS 96
 #define TICKET_NAME_SIZE 24
 
 struct ticket {

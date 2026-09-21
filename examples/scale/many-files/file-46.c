@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MINESHAFT_SLOTS 64
+#define MINESHAFT_SLOTS 96
 #define MINESHAFT_NAME_SIZE 24
 
 struct mineshaft {

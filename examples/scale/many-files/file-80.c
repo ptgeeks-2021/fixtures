@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ARTICLE_SLOTS 64
+#define ARTICLE_SLOTS 96
 #define ARTICLE_NAME_SIZE 24
 
 struct article {

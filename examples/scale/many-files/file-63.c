@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define INCUBATOR_SLOTS 64
+#define INCUBATOR_SLOTS 96
 #define INCUBATOR_NAME_SIZE 24
 
 struct incubator {

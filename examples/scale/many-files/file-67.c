@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LIGHTHOUSE_SLOTS 64
+#define LIGHTHOUSE_SLOTS 96
 #define LIGHTHOUSE_NAME_SIZE 24
 
 struct lighthouse {

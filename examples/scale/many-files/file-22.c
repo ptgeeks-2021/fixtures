@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define RESERVATION_SLOTS 64
+#define RESERVATION_SLOTS 96
 #define RESERVATION_NAME_SIZE 24
 
 struct reservation {

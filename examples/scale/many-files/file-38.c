@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define WORKOUT_SLOTS 64
+#define WORKOUT_SLOTS 96
 #define WORKOUT_NAME_SIZE 24
 
 struct workout {

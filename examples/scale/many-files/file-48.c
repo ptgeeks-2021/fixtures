@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TANYARD_SLOTS 64
+#define TANYARD_SLOTS 96
 #define TANYARD_NAME_SIZE 24
 
 struct tanyard {

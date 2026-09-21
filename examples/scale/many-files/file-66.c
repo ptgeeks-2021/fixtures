@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define WINDMILL_SLOTS 64
+#define WINDMILL_SLOTS 96
 #define WINDMILL_NAME_SIZE 24
 
 struct windmill {
