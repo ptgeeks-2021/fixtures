@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CONTRACT_SLOTS 64
+#define CONTRACT_SLOTS 96
 #define CONTRACT_NAME_SIZE 24
 
 struct contract {

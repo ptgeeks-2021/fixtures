@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define INVOICE_SLOTS 64
+#define INVOICE_SLOTS 96
 #define INVOICE_NAME_SIZE 24
 
 struct invoice {

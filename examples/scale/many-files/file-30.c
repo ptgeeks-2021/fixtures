@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ANTENNA_SLOTS 64
+#define ANTENNA_SLOTS 96
 #define ANTENNA_NAME_SIZE 24
 
 struct antenna {

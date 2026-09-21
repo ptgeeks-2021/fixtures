@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PALLET_SLOTS 64
+#define PALLET_SLOTS 96
 #define PALLET_NAME_SIZE 24
 
 struct pallet {

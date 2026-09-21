@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LICENSE_SLOTS 64
+#define LICENSE_SLOTS 96
 #define LICENSE_NAME_SIZE 24
 
 struct license {

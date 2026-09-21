@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BEACON_SLOTS 64
+#define BEACON_SLOTS 96
 #define BEACON_NAME_SIZE 24
 
 struct beacon {

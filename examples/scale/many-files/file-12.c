@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PATIENT_SLOTS 64
+#define PATIENT_SLOTS 96
 #define PATIENT_NAME_SIZE 24
 
 struct patient {

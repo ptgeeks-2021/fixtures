@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LANTERN_SLOTS 64
+#define LANTERN_SLOTS 96
 #define LANTERN_NAME_SIZE 24
 
 struct lantern {

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PRINTER_SLOTS 64
+#define PRINTER_SLOTS 96
 #define PRINTER_NAME_SIZE 24
 
 struct printer {

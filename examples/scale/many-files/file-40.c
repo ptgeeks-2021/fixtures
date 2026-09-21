@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define HARBOUR_SLOTS 64
+#define HARBOUR_SLOTS 96
 #define HARBOUR_NAME_SIZE 24
 
 struct harbour {

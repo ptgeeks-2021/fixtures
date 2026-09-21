@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LESSON_SLOTS 64
+#define LESSON_SLOTS 96
 #define LESSON_NAME_SIZE 24
 
 struct lesson {

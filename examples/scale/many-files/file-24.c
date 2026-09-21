@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CAMPAIGN_SLOTS 64
+#define CAMPAIGN_SLOTS 96
 #define CAMPAIGN_NAME_SIZE 24
 
 struct campaign {

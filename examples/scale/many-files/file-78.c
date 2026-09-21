@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PAYMENT_SLOTS 64
+#define PAYMENT_SLOTS 96
 #define PAYMENT_NAME_SIZE 24
 
 struct payment {

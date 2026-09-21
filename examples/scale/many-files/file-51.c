@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SCANNER_SLOTS 64
+#define SCANNER_SLOTS 96
 #define SCANNER_NAME_SIZE 24
 
 struct scanner {

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SMELTER_SLOTS 64
+#define SMELTER_SLOTS 96
 #define SMELTER_NAME_SIZE 24
 
 struct smelter {

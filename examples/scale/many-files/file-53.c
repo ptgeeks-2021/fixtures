@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SWITCHBOARD_SLOTS 64
+#define SWITCHBOARD_SLOTS 96
 #define SWITCHBOARD_NAME_SIZE 24
 
 struct switchboard {

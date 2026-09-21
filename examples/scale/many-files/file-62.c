@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CENTRIFUGE_SLOTS 64
+#define CENTRIFUGE_SLOTS 96
 #define CENTRIFUGE_NAME_SIZE 24
 
 struct centrifuge {
