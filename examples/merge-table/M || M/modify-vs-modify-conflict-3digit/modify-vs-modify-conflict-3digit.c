@@ -162,7 +162,7 @@ int main(void)
 {
     flight_reset();
     flight_load_seed();
-    flight_remove(103);
+    flight_remove(104);
     flight_report(stdout);
 
     return 0;

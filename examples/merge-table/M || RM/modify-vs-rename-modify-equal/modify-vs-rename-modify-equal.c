@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define VINEYARD_SLOTS 64
+#define VINEYARD_SLOTS 256
 #define VINEYARD_NAME_SIZE 24
 
 struct vineyard {

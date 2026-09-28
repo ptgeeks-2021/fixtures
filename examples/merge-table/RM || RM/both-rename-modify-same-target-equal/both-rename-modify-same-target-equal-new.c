@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SEISMOGRAPH_SLOTS 64
+#define SEISMOGRAPH_SLOTS 256
 #define SEISMOGRAPH_NAME_SIZE 24
 
 struct seismograph {

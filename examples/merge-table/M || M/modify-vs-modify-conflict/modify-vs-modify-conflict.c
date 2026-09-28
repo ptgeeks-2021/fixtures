@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define RECIPE_SLOTS 64
+#define RECIPE_SLOTS 96
 #define RECIPE_NAME_SIZE 24
 
 struct recipe {

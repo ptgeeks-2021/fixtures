@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SEXTANT_SLOTS 64
+#define SEXTANT_SLOTS 96
 #define SEXTANT_NAME_SIZE 24
 
 struct sextant {

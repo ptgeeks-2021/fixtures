@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PODCAST_SLOTS 64
+#define PODCAST_SLOTS 256
 #define PODCAST_NAME_SIZE 24
 
 struct podcast {

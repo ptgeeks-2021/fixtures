@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define REACTOR_SLOTS 64
+#define REACTOR_SLOTS 96
 #define REACTOR_NAME_SIZE 24
 
 struct reactor {
